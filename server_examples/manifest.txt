@@ -1,0 +1,6 @@
+# manifest.txt
+# Lista plików do synchronizacji na Cardputer.
+# Pliki muszą istnieć w katalogu /cardputer/ na serwerze.
+
+hello_server.py
+notes_server.py
