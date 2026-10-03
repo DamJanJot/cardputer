@@ -211,6 +211,22 @@ CardpuTest Studio → Server (/cardputer) → Remote Sync Hub → Cardputer
 
 ---
 
+## 🔐 Security
+
+- Keep Wi-Fi credentials outside files committed to the repository.
+- Use a local configuration file or device-side secrets for SSID and password values.
+- Prefer HTTPS for the synchronization server whenever the hosting environment supports it.
+- Review the manifest before synchronization when the server is shared with other users.
+
+## ✅ Sync checklist
+
+Before running synchronization, verify that:
+
+- the Cardputer and server are reachable from the same network,
+- `BASE_URL` points to the directory containing `manifest.txt`,
+- every path in the manifest exists under the server's `apps/` directory,
+- the SD card is mounted and writable at `/sd`.
+
 ## 📄 License
 
 MIT License
